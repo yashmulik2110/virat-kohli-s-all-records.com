@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat Kohli | The Ultimate Record Book</title>
+    <style>
+        :root {
+            --primary-gold: #c5a059;
+            --dark-blue: #0a192f;
+            --rcb-red: #da251d;
+            --white: #ffffff;
+            --light-gray: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--light-gray);
+            color: #333;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 { font-size: 4rem; margin: 0; letter-spacing: 5px; text-transform: uppercase; }
+        header p { font-size: 1.5rem; color: var(--primary-gold); }
+
+        /* Navigation */
+        nav {
+            background: var(--dark-blue);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover { color: var(--primary-gold); }
+
+        /* Main Content Containers */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            border-left: 5px solid var(--rcb-red);
+            padding-left: 15px;
+            color: var(--dark-blue);
+            text-transform: uppercase;
+            margin-top: 40px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--dark-blue);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover { transform: translateY(-5px); background: var(--rcb-red); }
+        .stat-card h3 { font-size: 2.5rem; margin: 0; color: var(--primary-gold); }
+        .stat-card p { margin: 5px 0 0; text-transform: uppercase; font-size: 0.8rem; }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th { background-color: var(--dark-blue); color: white; }
+        table tr:nth-child(even) { background-color: #f9f9f9; }
+
+        /* Milestones Timeline */
+        .milestone {
+            border-left: 2px solid var(--primary-gold);
+            padding-left: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .milestone::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: var(--rcb-red);
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            border-radius: 50%;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>VIRAT KOHLI</h1>
+    <p>THE MODERN DAY GOAT | RECORDS AS OF 2026</p>
+</header>
+
+<nav>
+    <a href="#summary">Career Summary</a>
+    <a href="#centuries">Century Tracker</a>
+    <a href="#ipl">IPL Legend</a>
+    <a href="#milestones">Major Milestones</a>
+</nav>
+
+<div class="container">
+    <section id="summary">
+        <h2>Career Statistics (All Formats)</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>28,000+</h3>
+                <p>Total Int. Runs</p>
+            </div>
+            <div class="stat-card">
+                <h3>84</h3>
+                <p>Total Centuries</p>
+            </div>
+            <div class="stat-card">
+                <h3>53</h3>
+                <p>ODI Centuries</p>
+            </div>
+            <div class="stat-card">
+                <h3>9,000*</h3>
+                <p>IPL Runs (Approaching)</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Format</th>
+                    <th>Matches</th>
+                    <th>Runs</th>
+                    <th>Average</th>
+                    <th>100s / 50s</th>
+                    <th>Highest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Test</td>
+                    <td>123</td>
+                    <td>9,230</td>
+                    <td>46.85</td>
+                    <td>30 / 31</td>
+                    <td>254*</td>
+                </tr>
+                <tr>
+                    <td>ODI</td>
+                    <td>308</td>
+                    <td>14,557</td>
+                    <td>58.46</td>
+                    <td>53 / 76</td>
+                    <td>183</td>
+                </tr>
+                <tr>
+                    <td>T20I</td>
+                    <td>125</td>
+                    <td>4,188</td>
+                    <td>48.69</td>
+                    <td>1 / 38</td>
+                    <td>122*</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="centuries">
+        <h2>Recent Century Milestones (2023-2025)</h2>
+        <p>Following his record-breaking 50th ODI century at the 2023 World Cup, Kohli has continued his dominance in the twilight of his career.</p>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Format</th>
+                <th>Opponent</th>
+                <th>Score</th>
+                <th>Year</th>
+                <th>Venue</th>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>ODI</td>
+                <td>New Zealand</td>
+                <td>117</td>
+                <td>2023</td>
+                <td>Wankhede, Mumbai</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>ODI</td>
+                <td>Pakistan</td>
+                <td>100*</td>
+                <td>2025</td>
+                <td>Dubai (Champions Trophy)</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>ODI</td>
+                <td>South Africa</td>
+                <td>135</td>
+                <td>2025</td>
+                <td>Ranchi</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>ODI</td>
+                <td>South Africa</td>
+                <td>102</td>
+                <td>2025</td>
+                <td>Raipur</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Test</td>
+                <td>Australia</td>
+                <td>100*</td>
+                <td>2024</td>
+                <td>Perth</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="ipl">
+        <h2>Indian Premier League (IPL) Legacy</h2>
+        <div class="stat-card" style="background: var(--rcb-red); margin-bottom: 20px;">
+            <h3 style="color: white;">2025 CHAMPION</h3>
+            <p style="color: #ffd700;">Led RCB to their Maiden Title</p>
+        </div>
+        <ul>
+            <li><strong>Total Runs:</strong> 8,661 (Leading run-scorer in history).</li>
+            <li><strong>Centuries:</strong> 9 (Most in IPL history).</li>
+            <li><strong>Single Season Record:</strong> 973 runs (2016).</li>
+            <li><strong>Milestone Goal:</strong> Only 339 runs away from becoming the first player to 9,000 IPL runs.</li>
+        </ul>
+    </section>
+
+    <section id="milestones">
+        <h2>Historical Milestones</h2>
+        <div class="milestone">
+            <strong>January 2026:</strong> Approaching 28,016 runs to surpass Kumar Sangakkara as the 2nd highest run-scorer in international history.
+        </div>
+        <div class="milestone">
+            <strong>March 2025:</strong> Played a pivotal role in India winning the ICC Champions Trophy in Pakistan.
+        </div>
+        <div class="milestone">
+            <strong>November 2023:</strong> Became the first human to score 50 ODI centuries, surpassing Sachin Tendulkar's 49.
+        </div>
+        <div class="milestone">
+            <strong>2011-2020:</strong> Named ICC Player of the Decade.
+        </div>
+        <div class="milestone">
+            <strong>The "50 Average" King:</strong> Only player in history to maintain an average above 50 across all formats simultaneously for over a decade.
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2>Awards & Honors</h2>
+        <ul>
+            <li><strong>Sir Garfield Sobers Trophy (ICC Cricketer of the Year):</strong> 2017, 2018</li>
+            <li><strong>ICC ODI Player of the Year:</strong> 2012, 2017, 2018, 2023</li>
+            <li><strong>Major Dhyan Chand Khel Ratna:</strong> 2018</li>
+            <li><strong>Padma Shri:</strong> 2017</li>
+            <li><strong>Arjuna Award:</strong> 2013</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Virat Kohli Fan Portal. All stats updated as of January 2026.</p>
+</footer>
+
+</body>
+</html>
